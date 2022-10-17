@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+		<style type="text/css">
+			#animation1{
+				width: 300px;
+				height: 300px;
+				animation-name: movingsquare;
+				position: relative;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				
+
+			}
+
+
+
+			@keyframes movingsquare {
+		 	 0%   {background-color:red; left:0px; top:0px;}
+		  	25%  {background-color:yellow; left:1000px; top:1000;}
+		 	50%  {background-color:blue; left:1130px; top:1500;}
+		  	75%  {background-color:green; left:0px; top:200px;}
+		  	100% {background-color:red; left:0px; top:0px;}
+		}
+
+
+		#menu{
+			width: 100%;
+			height: 100px;
+			background-color: lightskyblue;
+		}
+
+
+
+	.button{
+		display: inline-block;
+		font-family:courier;
+		font-size: 50px;
+		width: 100%;
+		text-align: center;
+		height: 150px;
+		color: black;
+		transition: 3s;
+		margin: 0 auto;
+	}
+
+	.button:hover{
+		transition: 1s;
+		background-color: lightpink;
+
+	}
+
+		</style>
+
+
+
+</head>
+
+
+<body>
+<div  id="menu">
+
+
+<a href="projects.html"><div  class="button" id="Projects">
+	projects
+</div></a>
+
+
+<div id = "animation1">
+
+
+	
+</div>
+
+
+
+</body>
+</html>
