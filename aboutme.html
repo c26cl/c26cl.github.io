@@ -1,1 +1,85 @@
-about me
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	
+		#menu{
+			width: 100%;
+			height: 100px;
+			background-color: lightskyblue;
+		}
+
+		body{
+			margin: 0 auto;
+			background-image:url(data:image/jpeg;base64,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);
+			background-repeat: no-repeat;
+			background-size: cover;
+
+
+
+		}
+
+
+
+	.button{
+		display: inline-block;
+		font-family:courier;
+		font-size: 50px;
+		width: 33.1485%;
+		text-align: center;
+		height: 100px;
+		color: black;
+		transition: 3s;
+		margin: 0 auto;
+	}
+
+	.button:hover{
+		transition: 1s;
+		background-color: lightpink;
+
+	}
+
+
+		p{
+			font-size: 30px;
+			display: inline-block;
+			color: whitesmoke;
+		}
+
+	</style>
+
+
+
+</head>
+<body>
+
+<div id="menu">
+
+
+<a href="projects.html"><div class="button" id="Projects">
+	projects
+</div></a>
+
+
+
+<a href="journal.html"><div class="button" id="Journal">
+	journal
+</div></a>
+
+
+
+<a href="index.html"><div class="button" id="Index">
+	index
+</div></a>
+
+</div>
+<p>
+Hi. My name is Campbell Langdon. I am a 14 year old boy who lives in New York City and goes to the Dalton School. I love playing tennis, working out, and spending time with my friends. This is my website for my CS1 class. I hope you like my projects!
+
+</p>
+
+</body>
+</html>
