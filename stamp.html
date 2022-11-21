@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+
+	<style type="text/css">
+		
+		.pingpongs{
+			background-image: url("file:///Users/c26cl/Desktop/c26cl.github.io/paddle.png");
+			height: 850px;
+			width: 850px;
+			transform: scale(0.2);
+			border: 1px solid black;
+			display: inline-block;
+		}
+
+		.pingpongs:hover{
+			background-image: url(https://i5.walmartimages.com/asr/421d5c38-d435-4860-b551-29b2409cf582_1.c22b872330ce61488b2cf82e550b7fde.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF);
+
+		}
+
+
+	</style>
+
+
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		let counter = 0
+
+		function makePingpong(){
+			counter = counter +1
+
+			let pingpong = document.createElement("div");
+			
+			document.body.appendChild(pingpong);
+			
+			pingpong.classList.add("pingpongs");
+			
+			pingpong.innerText = counter;
+
+
+
+		}
+
+
+	setInterval(makePingpong, 100)
+
+
+
+
+	</script>
+
+	<img src="file:///Users/c26cl/Desktop/c26cl.github.io/paddle.png">
+
+
+
+</body>
+</html>

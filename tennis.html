@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		#ball{
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url(https://www.wilson.com/en-us/media/catalog/product/W/R/WR082720U__8ce50a18b95bd699dd4b639a49f29abb.png);
+			position: absolute;
+		}
+
+
+	</style>
+
+
+
+</head>
+<body>
+
+
+<div id="ball"></div>
+
+<script type="text/javascript">
+	document.addEventListener("click", function makeDiv(event){
+
+		console.log(event.clientX, event.clientY);
+
+		ball.style.left = event.clientX - 75 + "px"
+		ball.style.top = event.clientY - 75 + "px"
+		ball.style.backgroundImage = "url(https://cdn.shopify.com/s/files/1/0051/8442/1991/products/Tennis-balls-1024x1024_1400x.jpg?v=1585582415)"
+
+
+	})
+
+</script>
+
+
+
+
+</body>
+</html>
