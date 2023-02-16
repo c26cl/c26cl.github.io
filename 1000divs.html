@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		.controllers{
+			width: 100px;
+			height: 100px;
+			margin: 3px;
+			background-color: blueviolet;
+			display: inline-block;
+		}
+			#menu{
+			width: 100%;
+			height: 100px;
+			background-color: lightskyblue;
+		}
+
+
+
+	.button{
+		display: inline-block;
+		font-family:courier;
+		font-size: 50px;
+		width: 100%;
+		text-align: center;
+		height: 150px;
+		color: black;
+		transition: 3s;
+		margin: 0 auto;
+	}
+
+	.button:hover{
+		transition: 1s;
+		background-color: lightpink;
+
+	}
+
+
+	</style>
+
+</head>
+<body>
+<div  id="menu">
+
+
+<a href="projects.html"><div  class="button" id="Projects">
+	projects
+</div></a>
+<script type="text/javascript">
+	function makeDivs(placeholder){
+		var box = document.createElement("div")
+		document.body.appendChild(box);
+		box.classList.add("controllers")
+		box.innerText = placeholder
+	}
+
+
+for(var i=1; i<1001; i=i+1)
+	{makeDivs(i)}
+</script>
+
+</body>
+</html>

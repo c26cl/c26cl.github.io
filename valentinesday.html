@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	#card{
+		background-image: url(https://gifsec.com/wp-content/uploads/2022/09/happy-valentine-gif-41.gif);
+		width: 1450px;
+		height: 780px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+		font-size: 100px;
+		color: darkred;
+	}
+		#ball{
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			font-size: 100px;
+		}
+
+		#click{
+			height: 350px;
+			width: 350px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+</style>
+
+
+</head>
+<body>
+<div id="click">
+	<p>
+		I love you so much! <3 You're an amazing person and I'm so glad you're in my life. Happy Valentine's Day!
+	</p>
+</div>
+<div id="ball">
+	<p>
+		♥️
+	</p>
+</div>
+<div id="card">
+	<p>
+	Happy Valentine's Day!!
+</p>
+</div>
+<script type="text/javascript">
+		let name = "campbell"
+		console.log("hi " + name)
+		alert("Hi emma! Just wanted to remind you that you're amazing and I hope you have the best day!")
+
+	document.addEventListener("mousemove", function makeDiv(event){
+
+		console.log(event.clientX, event.clientY);
+
+		ball.style.left = event.clientX + "px"
+		ball.style.top = event.clientY - 40 + "px"
+	
+
+	})
+
+	document.addEventListener("click", function makeDiv(event){
+
+		console.log(event.clientX, event.clientY);
+
+		click.style.left = event.clientX + "px"
+		click.style.top = event.clientY + 80 + "px"
+	
+
+	})
+	
+</script>
+
+</body>
+</html>
