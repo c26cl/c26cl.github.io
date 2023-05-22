@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section><h2 class="r-fit-text">Final Project</h2>
+					<h2 class="r-fit-text">By Campbell Langdon</h2>
+				</section>
+				<section>
+					<iframe id="inlineFrameExample"
+					    title="Project"
+					    width=100%
+					    height="1000"
+					    src="file:///Users/c26cl/Desktop/c26cl.github.io/projects.html">
+					</iframe>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+					 	<script type="text/javascript">
+					 		function makeDivs(placeholder){
+					 			var box = document.createElement("div")
+					 			document.body.appendChild(box);
+					 			box.classList.add("controllers")
+					 			box.innerText = placeholder
+					 		}
+
+
+					 	for(var i=1; i<417; i=i+1)
+					 		{makeDivs(i)}
+					 	</script>
+				  	</code></pre>		
+				</section>
+				<section>
+					 <pre><code data-trim data-noescape>
+							.square{
+									background-color:darkblue;
+									width: 50px;
+									height: 50px;
+									transition:8s;
+									display: inline-block;
+								}
+
+							.square:hover{
+									background-color: hotpink;
+									transition:0.1s;
+									transform: rotate(360deg);
+								}
+					</code></pre>	
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+							function changeColor(event){
+									event.target.style.backgroundColor="hotpink"
+								}
+
+							for(var i=1; i<417; i=i+1)
+								{
+									var square = document.createElement("div")
+									square.classList.add("square")
+									square.setAttribute("id",i)
+									square.addEventListener("click", changeColor)
+									document.body.appendChild(square);
+								}
+
+					</code></pre>	
+				</section>
+				<section>
+					<iframe id="inlineFrameExample"
+					    title="Project"
+					    width=100%
+					    height="1000"
+					    src="file:///Users/c26cl/Desktop/c26cl.github.io/projects.html">
+					</iframe>
+				</section>
+				<section>
+					 Thanks!
+				</section>
+			
+		
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
